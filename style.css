@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+
+  font-size: 62.5%;
+
+  --fw-normal:400;
+  --fw-semi-bold:600;
+  --fw-bold:700;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    font-weight: var(--fw-normal);
+    background-color: var(--Off-Black);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+main {
+    margin: 0 auto;
+    padding: 6rem;
+}
+
+.profile {
+    background-color: var(--Dark-Grey);
+    width: 48rem;
+    padding: 4rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+.profile-img img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-title h1 {
+    font-weight: var(--fw-bold);
+    color: var(--White);
+    padding-top: 2rem;
+}
+
+.profile-title h2 {
+    font-weight: var(--fw-semi-bold);
+    color: var(--Green);
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+    margin-top: 0.8rem;
+}
+
+.profile p {
+    font-weight: var(--fw-normal);
+    color: var(--White);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social-media li a {
+    background-color: var(--Grey);
+    padding: 2rem;
+    border-radius: 1.4rem;
+    margin-top: 1.6rem;
+    color: var(--White);
+    font-weight: var(--fw-semi-bold);
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media li:hover a {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+    font-weight: var(--fw-semi-bold);
+}
